@@ -42,7 +42,7 @@ function createOrder(cart) {
   return promise;
 }
 
-function proceedToPayment(prderId) {
+function proceedToPayment(orderId) {
   return new Promise(function (resolve, reject) {
     resolve("Payment Successful");
   });
