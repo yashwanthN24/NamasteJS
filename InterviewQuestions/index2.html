@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <ul id="Category">
+        <li id="Laptops">Laptops</li>
+        <li id="Camera">Camera</li>
+        <li id="Shoes">Shoes</li>
+      </ul>
+    </div>
+    <script src="EventDelegation.js"></script>
+  </body>
+</html>
+
+<!-- Benefits of event delegation:
+1) improves memory space
+2) mitigates risk of performance bottle neck
+3) Dom manipulation
+4) when elements get added dynamically, the process of adding events is slow
+Limitations:
+1) All the events are not bubbled up, some events like blur, focus are not bubbled up
+2) if e.stopPropogation is used in child, then events are not bubbled up -->

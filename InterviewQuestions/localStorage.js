@@ -38,3 +38,31 @@ console.log(JSON.parse(objString));
 
 // make small  own function to do all these getitems and setItems from localstorage
 // It saves ur time just can call those functions
+
+localStorage.removeItem("user");
+localStorage.removeItem("User-copy");
+
+function getItemFromLocalStorage(key) {
+  let val = localStorage.getItem(key);
+  if (typeof val === "object") {
+    return JSON.parse(val);
+  }
+  return val;
+}
+
+function setItemToLocalStorage(key, value) {
+  if (typeof value === "object") {
+    localStorage.setItem(key, JSON.stringify(value));
+    return;
+  }
+
+  localStorage.setItem(key, value);
+}
+
+setItemToLocalStorage("user", { name: "yash" });
+
+setItemToLocalStorage("Age", 45);
+
+console.log(getItemFromLocalStorage("Age"));
+
+localStorage.clear();
