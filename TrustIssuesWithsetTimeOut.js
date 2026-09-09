@@ -1,5 +1,11 @@
 console.log("start");
 
+// function cb(){
+//   console.log("Callback");
+// }
+
+// setTimeout(cb , 0);
+
 setTimeout(function cb() {
   console.log("CallBack");
 }, 5000);
