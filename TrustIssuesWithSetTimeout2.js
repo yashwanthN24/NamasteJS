@@ -5,3 +5,13 @@ setTimeout(function cb() {
 }, 0);
 
 console.log("end");
+
+/*
+
+  Output: 
+
+    start 
+    end 
+    callback 
+
+*/
