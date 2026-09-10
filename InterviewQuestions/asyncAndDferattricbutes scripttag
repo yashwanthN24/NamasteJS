@@ -1,0 +1,33 @@
+async and defer attributes anddefault script tag 
+
+
+default scri[pt tag 
+
+<script src="" > </script> case 
+
+- Html parsing done line by line and when script is encon ter html rendering stopped and script loading (downloading) and executing happens 
+- aftter that script done only it parses the rest of html 
+
+
+<script async ></script
+
+- HTML parsing done 
+- fetches script parallely and when loaded stops html parsing and executes scripts parallely 
+
+
+order of scripts not guarantteed 
+
+
+<script defer></script> 
+
+- HTML parsing done 
+- Scripts downloaded parallely but only executed after complete html file is parsed or rendered 
+
+- most safest option unlike asyn where order not maintaned as they execute scripts paralllelybased on which is downloaded first 
+
+
+Easy rule: 
+
+- Normal : stop and execute now (Normal script) 
+- async - download in parallel , execute whenever ready i.e downloaded 
+- defer - download in parallel execute after html in order 
