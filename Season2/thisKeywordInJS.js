@@ -27,6 +27,9 @@ x();
 
 // To goto strict mode we use "use strict" at the top of the file
 
+// this keyword in strict mode is window object in nonstrict mode undefined 
+// also depeds n on how its called 
+
 // This keyword value depends on how this is called
 
 x(); //  this =  undefined
