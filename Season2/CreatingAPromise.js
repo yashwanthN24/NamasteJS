@@ -75,4 +75,6 @@ createOrder(cart)
     console.log("This excutes always");
   });
 
+// then is always called after catcheh if then is placed after catch
+
 // */
