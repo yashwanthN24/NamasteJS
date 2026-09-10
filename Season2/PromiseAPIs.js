@@ -50,5 +50,5 @@ Promise.any([p1, p2, p3])
   .then((res) => console.log(res))
   .catch((err) => {
     console.error(err);
-    console.log(err.errors);
+    console.log(err.errors);// for promise.any if all fail we get aggregate error in a aray to access that array we get oit in object with errors as key 
   });
