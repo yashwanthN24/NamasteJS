@@ -78,3 +78,26 @@ createOrder(cart)
 // then is always called after catcheh if then is placed after catch
 
 // */
+
+
+/*
+
+How Promise Execution Actually Works
+1. When new Promise(executor) is called, JavaScript:
+• Creates a Promise object in pending state.
+• Creates two internal control functions: resolve and reject.
+• Immediately calls the executor function, passing these two functions into it.
+2. The executor function starts the async task
+(API call, DB query, timeout, etc.).
+3. When the async task finishes:
+• If successful -+ executor calls resolve(result)
+• If failed —+ executor calls reject(error)
+4. Calling resolve or reject :
+• Changes the Promise state from pending to fulfilled or rejected
+• Stores the result or error internally
+• Triggers all attached .then() or .catch() callbacks
+5.then() runs automatically when the Promise is fulfilled.
+.catch() runs automatically when the Promise is rejected.
+
+
+*/
