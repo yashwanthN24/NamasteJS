@@ -99,6 +99,7 @@ b) Promises are used to solve the problems of callbacks like inversion of contro
 c) They give us the result prompt in three states: 1) Pending 2) Fulfilled 3) Rejected
 d) We can attach function to promise object and retrieve its value unlike callbacks no need to pass the function.
 e) Nesting can be done in Promises and with the help of that we can return the values in each individual chain.
+6) Promise objects are immutaable so can be passed across different places safely withiut worrying about modification.
 
 */
 
