@@ -1,7 +1,7 @@
 /*
 
 
-Promise.all(); 
+1) Promise.all(); 
 
 - To do Parallel API Calls  and get results 
 
@@ -10,6 +10,25 @@ Promise.all([p1 , p2 , p3]); => gives a result array [ val1 , val2 , val3] after
               3s , 2s , 1s
 
 waits for all of them to finish
+
+if any of them fails returns a global Error 
+
+2) Promise.allSettled()
+
+- returns array of fulfilled promises (either fulfilled or rejected) 
+
+- if error in any promiuse returns that promise erro in thta array 
+same as promise.all() but returns array of errors even for filure 
+
+3) Promise.race()
+
+- looks for first settked promise (eithe succes of failure ) so returns promise of success or failure not array 
+
+- returns result of first settled promise (either value or error) 
+
+4) Promise.any()
+
+- success sekking first gets returns if all error returens aggreagte error in array
 
 
 */
