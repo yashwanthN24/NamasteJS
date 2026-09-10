@@ -79,3 +79,6 @@ handlePromise();
 // JS Doesn't wait for anyone it rather suspends the function execution when it see await and waits till that Promise gets resolved and then continues the execution  from the same line it has left while suspending of that function
 
 // This is done by pushing and poping of that function into the call stack
+
+
+// https://gemini.google.com/app/a855524373fc09ca
