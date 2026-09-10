@@ -46,7 +46,7 @@ const obj = {
   },
 };
 
-obj.x();
+obj.x(); // inside a object method this refers to the object itself if its a function expression 
 
 // Three Important functions while dealing with this keyword
 
@@ -65,7 +65,7 @@ const student2 = {
   name: "Deepika",
 };
 
-student.printName.call(student2);
+student.printName.call(student2);// the first value of call is always the value of this keyword so now this refers to this student2 object
 
 //this keyword inside arrow functions
 
@@ -78,7 +78,7 @@ const object = {
   },
 };
 
-object.x();
+object.x();// window object as this in arrow functions takes the parent parents this i.e global level this here so window
 
 // this in arrow function becomes the this of that parent's parent i.e the
 // enclosing lexical context
@@ -87,6 +87,7 @@ const object1 = {
   a: 10,
   x: function () {
     //   Enclosing lexical context
+    // it bhaves lkike its here this so this is object1  itself
     const y = () => {
       console.log(this); // remember arrow function doesn't have this keyword
     };
