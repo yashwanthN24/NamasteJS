@@ -23,3 +23,5 @@ Function.prototype.mybind = function () {
 function fun() {}
 
 // Now all functions created can access that myBind method through prototype inheritance
+
+https://chatgpt.com/c/6aa2a264-686c-83e9-a7db-9775431267e2
